@@ -1,0 +1,70 @@
+[
+  {
+    "id": "e93bcc1f-98b1-48b8-bf17-563406770526",
+    "pet": {
+      "id": "761666de-610a-4a4c-8506-16a741b779d5",
+      "name": "Greg",
+      "breed": "Border Collie",
+      "dateOfBirth": "2013-05-11T23:00:00.000+0000",
+      "owner": {
+        "id": "57801773-58ed-4b60-a2bc-3a449749e77e",
+        "firstName": "Sally",
+        "surname": "Brown",
+        "contactNumber": "01773 857748"
+      }
+    },
+    "start": "2019-08-14T13:30:00.000+0000",
+    "end": "2019-08-14T14:00:00.000+0000"
+  },
+  {
+    "id": "0fd285c6-259c-4c9c-bfd2-df19cf2570b5",
+    "pet": {
+      "id": "72d20ac6-d26b-42f0-bff5-5f2c1e6606d2",
+      "name": "Dave",
+      "breed": "Labrador",
+      "dateOfBirth": "2015-11-26T00:00:00.000+0000",
+      "owner": {
+        "id": "fae9463c-25b1-473c-b328-9b91cde2fce9",
+        "firstName": "Harry",
+        "surname": "Smith",
+        "contactNumber": "07354 543224"
+      }
+    },
+    "start": "2019-07-06T08:45:00.000+0000",
+    "end": "2019-07-06T09:00:00.000+0000"
+  },
+  {
+    "id": "9a16ba1c-ef42-43a0-a3cf-06a9bdd5999b",
+    "pet": {
+      "id": "64b660a4-d606-47d2-9cca-ab693779bec1",
+      "name": "Greg II",
+      "breed": "Border Collie",
+      "dateOfBirth": "2010-08-03T23:00:00.000+0000",
+      "owner": {
+        "id": "613c0673-1119-4a60-ab31-059f08009267",
+        "firstName": "David",
+        "surname": "Graham",
+        "contactNumber": "07146 879238"
+      }
+    },
+    "start": "2019-06-05T15:30:00.000+0000",
+    "end": "2019-06-05T16:00:00.000+0000"
+  },
+  {
+    "id": "a58195a6-00a1-4c74-a9e5-6562e38b3476",
+    "pet": {
+      "id": "72d20ac6-d26b-42f0-bff5-5f2c1e6606d2",
+      "name": "Dave",
+      "breed": "Labrador",
+      "dateOfBirth": "2015-11-26T00:00:00.000+0000",
+      "owner": {
+        "id": "fae9463c-25b1-473c-b328-9b91cde2fce9",
+        "firstName": "Harry",
+        "surname": "Smith",
+        "contactNumber": "07354 543224"
+      }
+    },
+    "start": "2019-08-25T10:00:00.000+0000",
+    "end": "2019-08-25T11:00:00.000+0000"
+  }
+]

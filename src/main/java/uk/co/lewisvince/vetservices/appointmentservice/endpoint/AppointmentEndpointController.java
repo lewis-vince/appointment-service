@@ -18,11 +18,6 @@ public class AppointmentEndpointController {
     @Autowired
     private AppointmentService appointmentService;
 
-    @GetMapping("healthCheck")
-    String healthCheck() {
-        return "Ok";
-    }
-
     @GetMapping("/appointments")
     Iterable<Appointment> getAll() {
         return appointmentService.getAll();

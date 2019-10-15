@@ -1,0 +1,17 @@
+{
+  "id": "9a16ba1c-ef42-43a0-a3cf-06a9bdd5999b",
+  "pet": {
+    "id": "64b660a4-d606-47d2-9cca-ab693779bec1",
+    "name": "Greg II",
+    "breed": "Border Collie",
+    "dateOfBirth": "2010-08-03T23:00:00.000+0000",
+    "owner": {
+      "id": "613c0673-1119-4a60-ab31-059f08009267",
+      "firstName": "David",
+      "surname": "Graham",
+      "contactNumber": "07146 879238"
+    }
+  },
+  "start": "2019-06-05T15:30:00.000+0000",
+  "end": "2019-06-05T16:00:00.000+0000"
+}

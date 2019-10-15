@@ -1,0 +1,17 @@
+{
+  "id": "0fd285c6-259c-4c9c-bfd2-df19cf2571b7",
+  "pet": {
+    "id": "72d20ac6-d26b-42f0-bff5-5f2c1e6606d2",
+    "name": "Dave",
+    "breed": "Labrador",
+    "dateOfBirth": "2015-11-26T00:00:00.000+0000",
+    "owner": {
+      "id": "fae9463c-25b1-473c-b328-9b91cde2fce9",
+      "firstName": "Harry",
+      "surname": "Smith",
+      "contactNumber": "07354 543224"
+    }
+  },
+  "start": "2010-04-06T09:45:00.000+0000",
+  "end": "2010-04-06T10:00:00.000+0000"
+}
