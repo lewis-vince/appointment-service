@@ -27,6 +27,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
+import java.util.TimeZone;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -38,6 +39,10 @@ public class AppointmentServiceGlue {
     private TestRestTemplate restTemplate;
 
     private ResponseEntity<String> response;
+
+    static {
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/London"));
+    }
 
     @Before
     public void before() {
