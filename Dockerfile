@@ -14,8 +14,8 @@ FROM openjdk:8-jre
 
 RUN mkdir /app
 
-COPY --from=BUILD_JAR /app/target/appointment-service-2.1.9.RELEASE.jar /app/appointment-service.jar
+COPY --from=BUILD_JAR /app/target/appointment-service-0.0.1-SNAPSHOT.jar /app/appointment-service.jar
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["java", "-jar", "-Dspring.profiles.active=prod", "/app/appointment-service.jar"]

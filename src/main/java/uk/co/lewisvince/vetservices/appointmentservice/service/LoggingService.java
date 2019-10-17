@@ -17,7 +17,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 
 @Slf4j
 @Service
-public class LoggingService {
+public class LoggingService implements Logger{
 
     @Value("${logging-service.url}")
     private String loggingServiceUrl;

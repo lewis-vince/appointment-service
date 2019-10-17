@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import uk.co.lewisvince.vetservices.appointmentservice.model.Appointment;
 import uk.co.lewisvince.vetservices.appointmentservice.model.LogRequest;
 import uk.co.lewisvince.vetservices.appointmentservice.service.AppointmentService;
+import uk.co.lewisvince.vetservices.appointmentservice.service.Logger;
 import uk.co.lewisvince.vetservices.appointmentservice.service.LoggingService;
 
 @Slf4j
@@ -21,7 +22,7 @@ import uk.co.lewisvince.vetservices.appointmentservice.service.LoggingService;
 public class AppointmentEndpointController {
 
     @Autowired
-    LoggingService loggingService;
+    Logger loggingService;
 
     @Autowired
     private AppointmentService appointmentService;

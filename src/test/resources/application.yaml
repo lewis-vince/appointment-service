@@ -4,3 +4,8 @@ spring:
     username: sa
     password: sa
     driver-class-name: org.h2.Driver
+  main:
+    allow-bean-definition-overriding: true
+
+logging-service:
+  url: http://localhost:8080/api/v1/log

@@ -22,6 +22,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.client.MockRestServiceServer;
 
 import java.io.IOException;
 import java.net.URI;
@@ -34,6 +35,8 @@ import static org.junit.Assert.assertNull;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AppointmentServiceGlue {
+
+    private MockRestServiceServer mockServer;
 
     @Autowired
     private TestRestTemplate restTemplate;
