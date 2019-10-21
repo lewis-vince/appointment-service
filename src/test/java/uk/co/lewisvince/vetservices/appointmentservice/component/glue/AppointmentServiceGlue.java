@@ -22,26 +22,31 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.web.client.MockRestServiceServer;
+import uk.co.lewisvince.vetservices.appointmentservice.model.Appointment;
+import uk.co.lewisvince.vetservices.appointmentservice.repository.AppointmentRepository;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
+import java.util.Optional;
 import java.util.TimeZone;
+import java.util.UUID;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AppointmentServiceGlue {
 
-    private MockRestServiceServer mockServer;
-
     @Autowired
     private TestRestTemplate restTemplate;
 
     private ResponseEntity<String> response;
+
+    @Autowired
+    private AppointmentRepository appointmentRepository;
 
     static {
         TimeZone.setDefault(TimeZone.getTimeZone("Europe/London"));
@@ -96,5 +101,11 @@ public class AppointmentServiceGlue {
     @And("The response status code is {int}")
     public void theResponseStatusCodeIs(int expectedStatusCode) {
         assertEquals(HttpStatus.resolve(expectedStatusCode), response.getStatusCode());
+    }
+
+    @And("The appointment with id {string} is not present in the store")
+    public void theAppointmentWithIdIsNotPresentInTheStore(String appointmentId) {
+        Optional<Appointment> appointment = appointmentRepository.findById(UUID.fromString(appointmentId));
+        assertFalse(appointment.isPresent());
     }
 }

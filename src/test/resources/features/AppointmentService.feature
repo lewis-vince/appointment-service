@@ -17,3 +17,9 @@ Feature: Get all appointments
     When A "POST" request is sent to the path "/api/v1/appointment" with a body from the file "requests/createAppointment_1.json"
     Then The response body matches the contents of the file "responses/createAppointment_1_success.json", ignoring the root level ID field
     And The response status code is 200
+
+    Scenario: Request to delete appointment deletes appointment from store
+      Given The appointment service is running
+      When A "DELETE" request is sent to the path "/api/v1/appointment/e93bcc1f-98b1-48b8-bf17-563406770526" with a body from the file "responses/emptyBody.json"
+      Then The response status code is 200
+      And The appointment with id "e93bcc1f-98b1-48b8-bf17-563406770526" is not present in the store

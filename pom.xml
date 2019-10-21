@@ -13,7 +13,7 @@
     <groupId>uk.vo.lewisvince.vetservices</groupId>
     <artifactId>appointment-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>logging-service</name>
+    <name>appointment-service</name>
 
     <properties>
         <cucumber.version>4.4.0</cucumber.version>

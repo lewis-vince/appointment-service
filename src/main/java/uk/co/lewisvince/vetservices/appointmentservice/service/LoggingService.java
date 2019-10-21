@@ -24,12 +24,12 @@ public class LoggingService implements Logger{
 
     private URI loggingServiceUri;
 
+    private RestTemplate restTemplate = new RestTemplate();
+
     @PostConstruct
     private void createLoggingServiceUri() throws URISyntaxException {
         loggingServiceUri = new URI(loggingServiceUrl);
     }
-
-    private RestTemplate restTemplate = new RestTemplate();
 
     public void log(LogRequest request, Object response) {
         RequestResponse requestResponse = new RequestResponse(request, response);
