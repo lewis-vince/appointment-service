@@ -1,4 +1,4 @@
-FROM maven:3.6.2-jdk-8-slim AS BUILD_JAR
+FROM maven:3.6.3-jdk-11-slim AS BUILD_JAR
 
 RUN mkdir /app
 
@@ -10,7 +10,7 @@ RUN mvn -f /app package
 
 
 
-FROM openjdk:8-jre
+FROM openjdk:11-jre
 
 RUN mkdir /app
 
